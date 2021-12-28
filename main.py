@@ -7,7 +7,6 @@ intents = nextcord.Intents.default()
 intents.members = True
 
 client = nextcord.Client()
-client.remove_command("help")
 
 # Put your discord bot token here
 TOKEN = "YOUR_DISCORD_BOT_TOKEN_HERE"
