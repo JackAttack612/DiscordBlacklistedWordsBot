@@ -23,6 +23,7 @@
 - Right click on the channel you wish to set as your logging channel
 - Select copy ID
 - Paste the ID into the main.py file where instructed to
+- Put your custom blacklisted words into the section where instructed to in the main.py file
 
 # Installing libraries
 - If on windows:
