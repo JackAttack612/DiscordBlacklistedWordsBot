@@ -18,7 +18,9 @@ blacklist_words = ["BlacklistedWordHere", "BlacklistedWordHere2", "BlacklistedWo
 async def on_message(message):
     msg = message.content
     if any(word in msg for word in blacklist_words):
+        # Deleting Message Sent
         await message.delete()
+        # Message Sent to author when blacklisted word is used
         await message.channel.send(f"{message.author.mention} You used a word that was blacklisted! Your message has been deleted.")
         
         # Logging Message
